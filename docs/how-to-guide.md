@@ -1,38 +1,32 @@
----
-layout: page
-title: "How-To / Task-Based Guide — GitHub Actions CI/CD Pipeline"
-permalink: /writing-samples/how-to-guide/
----
-
 <section class="section" markdown="1">
 
-<h2 class="section-title"><span class="icon-holder"><i class="fas fa-tasks"></i></span>How-To / Task-Based Guide</h2>
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-tasks"></i> How To Guide</span></h2>
 
-<div class="annotation-block" style="background: #f0f7f4; border: 1px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
-  <h4 style="margin-top: 0; color: #2e6b5e; font-size: 1rem;">About This Sample</h4>
+<div class="annotation-block" style="background: #11-0602; border: 0px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
+  <h4 style="margin-top: 0; color: #02ffff; font-size: .75rem;">About This Sample</h4>
   <table style="width: 100%; font-size: 0.88rem; border-collapse: collapse;">
     <tr>
-      <td style="width: 130px; font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Product</td>
-      <td style="padding: 4px 0; color: #555;">GitHub Actions — a real, widely used CI/CD automation platform built into GitHub repositories, available free for public repos.</td>
+      <td style="width: 130px; font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Product</td>
+      <td style="padding: 4px 0; color: #11-0602;">GitHub Actions — a real, widely used CI/CD automation platform built into GitHub repositories, available free for public repos.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Audience</td>
-      <td style="padding: 4px 0; color: #555;">Junior-to-mid-level developers who write code and push to GitHub regularly but have not set up automated testing or deployment pipelines before.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Audience</td>
+      <td style="padding: 4px 0; color: #11-0602;">Junior-to-mid-level developers who write code and push to GitHub regularly but have not set up automated testing or deployment pipelines before.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Tools Used</td>
-      <td style="padding: 4px 0; color: #555;">Markdown, YAML, Git, VS Code, GitHub.com workflow editor.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Tools Used</td>
+      <td style="padding: 4px 0; color: #11-0602;">Markdown, YAML, Git, VS Code, GitHub.com workflow editor.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Challenge Solved</td>
-      <td style="padding: 4px 0; color: #555;">GitHub Actions documentation is written for users who already understand CI/CD concepts. The challenge was demystifying workflow syntax — triggers, jobs, steps, runners — and connecting abstract concepts to a concrete, runnable example a developer could have working in under 30 minutes.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Challenge Solved</td>
+      <td style="padding: 4px 0; color: #11-0602;">GitHub Actions documentation is written for users who already understand CI/CD concepts. The challenge was demystifying workflow syntax — triggers, jobs, steps, runners — and connecting abstract concepts to a concrete, runnable example a developer could have working in under 30 minutes.</td>
     </tr>
   </table>
 </div>
 
 ---
 
-## Set Up a CI/CD Pipeline for a Node.js App Using GitHub Actions
+## How To Set Up a CI/CD Pipeline for a Node.js App Using GitHub Actions
 
 This guide walks you through creating an automated pipeline that runs your tests and reports results on every push to GitHub. By the end, every commit you push will automatically trigger your test suite — and you'll see pass/fail status directly on your pull requests.
 
@@ -49,7 +43,11 @@ Before you begin, confirm the following:
 - You have at least one test file that can be run with `npm test`.
 - You have write access to the repository.
 
-> ℹ️ **Don't have tests yet?** Add a placeholder: create `test/sample.test.js` with `test('placeholder', () => { expect(1).toBe(1); });` and add `"test": "jest"` to your `package.json` scripts. Install Jest with `npm install --save-dev jest`.
+!!! tip
+    **Don't have tests yet?**
+    
+    Add a placeholder: create `test/sample.test.js` with `test('placeholder', () => { expect(1).toBe(1);});` 
+    and add `"test": "jest"` to your `package.json` scripts. Install Jest with `npm install --save-dev jest`.
 
 ---
 

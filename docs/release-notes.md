@@ -1,40 +1,33 @@
----
-layout: page
-title: "Release Notes — PulseAPI v2.3"
-permalink: /writing-samples/release-notes/
----
-
 <section class="section" markdown="1">
 
-<h2 class="section-title"><span class="icon-holder"><i class="fas fa-clipboard-list"></i></span>Release Notes</h2>
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-clipboard-list"> Release Notes</i></span></h2>
 
-<div class="annotation-block" style="background: #f0f7f4; border: 1px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
-  <h4 style="margin-top: 0; color: #2e6b5e; font-size: 1rem;">About This Sample</h4>
+<div class="annotation-block" style="background: #11-0602; border: 0px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
+  <h4 style="margin-top: 0; color: #02ffff; font-size: .75rem;">About This Sample</h4>
   <table style="width: 100%; font-size: 0.88rem; border-collapse: collapse;">
     <tr>
-      <td style="width: 130px; font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Product</td>
-      <td style="padding: 4px 0; color: #555;"><strong>PulseAPI</strong> — a fictional REST API monitoring and alerting SaaS platform used by engineering teams to track uptime, latency, and error rates across their API endpoints.</td>
+      <td style="width: 130px; font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Product</td>
+      <td style="padding: 4px 0; color: #11-0602;"><strong>PulseAPI</strong> — a fictional REST API monitoring and alerting SaaS platform used by engineering teams to track uptime, latency, and error rates across their API endpoints.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Audience</td>
-      <td style="padding: 4px 0; color: #555;">Existing PulseAPI customers — primarily backend developers and engineering team leads — who need to understand what changed, whether action is required, and how to take advantage of new features.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Audience</td>
+      <td style="padding: 4px 0; color: #11-0602;">Existing PulseAPI customers — primarily backend developers and engineering team leads — who need to understand what changed, whether action is required, and how to take advantage of new features.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Tools Used</td>
-      <td style="padding: 4px 0; color: #555;">Markdown, Git changelog (conventional commits), Jira (for linking issues to release items), VS Code.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Tools Used</td>
+      <td style="padding: 4px 0; color: #11-0602;">Markdown, Git changelog (conventional commits), Jira (for linking issues to release items), VS Code.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Challenge Solved</td>
-      <td style="padding: 4px 0; color: #555;">Release notes often serve two very different readers: developers who need precise technical detail, and team leads who want to know the business impact quickly. A second challenge was surfacing deprecation notices prominently enough that customers act on them before the removal date, without burying them in a long list of less urgent items.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Challenge Solved</td>
+      <td style="padding: 4px 0; color: #11-0602;">Release notes often serve two very different readers: developers who need precise technical detail, and team leads who want to know the business impact quickly. A second challenge was surfacing deprecation notices prominently enough that customers act on them before the removal date, without burying them in a long list of less urgent items.</td>
     </tr>
   </table>
 </div>
 
 ---
 
-<div style="background: #fff8e1; border: 1px solid #ffe082; border-radius: 4px; padding: 12px 18px; margin-bottom: 24px; font-size: 0.88rem;">
-  ⚠️ <strong>Action required:</strong> The <code>v1/monitors</code> endpoint is deprecated in this release and will be removed on <strong>June 30, 2025</strong>. Migrate to <code>v2/monitors</code> before that date. See <a href="#deprecations">Deprecations</a> for details.
-</div>
+!!! warning
+    The `v1/monitors` endpoint is deprecated in this release and will be removed on **June 30, 2025**. Migrate to `v2/monitors` before that date. See <a href="#deprecations">Deprecations</a> for details.
 
 ## PulseAPI Release Notes — v2.3.0
 
@@ -69,7 +62,8 @@ You can now configure monitors to run checks from up to **5 geographic regions s
 
 The alerting engine now supports **AND/OR logic** across multiple conditions. Previously, alerts could only trigger on a single threshold (e.g., response time > 2000ms). You can now create rules such as:
 
-> Alert if response time > 1500ms **AND** error rate > 5% **for 3 consecutive checks**
+!!! note
+    If response time > 1500ms **AND** error rate > 5% **for 3 consecutive checks**
 
 Configure composite conditions in **Alerts > New Alert Rule > Advanced Conditions**, or via the updated `/v2/alerts` endpoint.
 

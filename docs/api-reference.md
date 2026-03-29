@@ -1,31 +1,26 @@
 ---
-layout: page
-title: "API Reference / Developer Guide — Stripe Payments API"
-permalink: /writing-samples/api-reference/
----
-
 <section class="section" markdown="1">
 
-<h2 class="section-title"><span class="icon-holder"><i class="fas fa-code"></i></span>API Reference / Developer Guide</h2>
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-code"></i></span> API Reference / Developer Guide</h2>
 
-<div class="annotation-block" style="background: #f0f7f4; border: 1px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
-  <h4 style="margin-top: 0; color: #2e6b5e; font-size: 1rem;">About This Sample</h4>
+<div class="annotation-block" style="background: #11-0602; border: 0px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
+  <h4 style="margin-top: 0; color: #02ffff; font-size: .75rem;">About This Sample</h4>
   <table style="width: 100%; font-size: 0.88rem; border-collapse: collapse;">
     <tr>
-      <td style="width: 130px; font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Product</td>
-      <td style="padding: 4px 0; color: #555;">Nexus Task API — a RESTful task management API for the Nexus project management platform, enabling developers to programmatically create, retrieve, update, and delete tasks.</td>
+      <td style="width: 130px; font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Product</td>
+      <td style="padding: 4px 0; color: #11-0602;">Nexus Task API — a RESTful task management API for the Nexus project management platform, enabling developers to programmatically create, retrieve, update, and delete tasks.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Audience</td>
-      <td style="padding: 4px 0; color: #555;">Backend developers integrating task management capabilities into internal tools, dashboards, or custom applications, with working knowledge of REST APIs, HTTP, and JWT authentication.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Audience</td>
+      <td style="padding: 4px 0; color: ##11-0602;">Backend developers integrating task management capabilities into internal tools, dashboards, or custom applications, with working knowledge of REST APIs, HTTP, and JWT authentication.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Tools Used</td>
-      <td style="padding: 4px 0; color: #555;">OpenAPI 3.0, Markdown, Postman (for validating request/response examples and JWT auth flows), VS Code, Git.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Tools Used</td>
+      <td style="padding: 4px 0; color: ##11-0602;">OpenAPI 3.0, Markdown, Postman (for validating request/response examples and JWT auth flows), VS Code, Git.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Challenge Solved</td>
-      <td style="padding: 4px 0; color: #555;">The Nexus Task API exposes a focused set of CRUD operations with several interdependent concerns — JWT authentication (including token generation and refresh), cursor-based pagination, rate limiting, and a shared error schema. The challenge was consolidating all of this into a single, scannable reference covering every endpoint, its parameters, and its error cases, so developers could complete an integration without switching between multiple documentation pages.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Challenge Solved</td>
+      <td style="padding: 4px 0; color: ##11-0602;">The Nexus Task API exposes a focused set of CRUD operations with several interdependent concerns — JWT authentication (including token generation and refresh), cursor-based pagination, rate limiting, and a shared error schema. The challenge was consolidating all of this into a single, scannable reference covering every endpoint, its parameters, and its error cases, so developers could complete an integration without switching between multiple documentation pages.</td>
     </tr>
   </table>
 </div>
@@ -105,8 +100,9 @@ Retrieves a paginated list of tasks associated with the authenticated user's wor
 ```
 
 **Error Responses:**
-*   **400 Bad Request:** Occurs if `limit` exceeds 100 or `status` contains an invalid value. Verify query parameter formatting.
-*   **401 Unauthorized:** Occurs if the JWT is missing, invalid, or expired. Obtain a new token.
+
+-   **400 Bad Request:** Occurs if `limit` exceeds 100 or `status` contains an invalid value. Verify query parameter formatting.
+-   **401 Unauthorized:** Occurs if the JWT is missing, invalid, or expired. Obtain a new token.
 *   **429 Too Many Requests:** Occurs if the API rate limit is exceeded. Implement exponential backoff.
 
 **Error Example (400 Bad Request):**
@@ -159,6 +155,7 @@ Creates a new task in the workspace. Use this endpoint when generating tasks fro
 ```
 
 **Error Responses:**
+
 *   **400 Bad Request:** Occurs if the required `title` field is missing or exceeds character limits. Ensure payload matches schema.
 *   **401 Unauthorized:** Occurs if the JWT token is invalid.
 *   **404 Not Found:** Occurs if the `assignee_id` provided does not exist in the workspace. Verify the user ID.
@@ -201,6 +198,7 @@ Retrieves the details of a specific task by its unique identifier. Use this endp
 ```
 
 **Error Responses:**
+
 *   **401 Unauthorized:** Occurs if authentication fails. Check the `Authorization` header.
 *   **404 Not Found:** Occurs if the task ID does not exist or you lack permission to view it. Confirm the `id` is correct.
 *   **500 Internal Server Error:** Occurs if the API experiences an unexpected fault. Retry the request later.
@@ -256,6 +254,7 @@ Fully updates an existing task. Use this endpoint to modify a task's attributes.
 ```
 
 **Error Responses:**
+
 *   **400 Bad Request:** Occurs if the `status` string is invalid. Ensure the value is one of the allowed enums.
 *   **404 Not Found:** Occurs if the specified task ID cannot be located. Verify the ID in the path.
 *   **409 Conflict:** Occurs if the task is locked by another simultaneous update. Retry the operation.
@@ -287,6 +286,7 @@ Permanently deletes a task. Use this endpoint to remove tasks that are obsolete 
 *(No body is returned for a successful deletion)*
 
 **Error Responses:**
+
 *   **401 Unauthorized:** Occurs if the request lacks a valid Bearer token.
 *   **403 Forbidden:** Occurs if the authenticated user lacks administrative privileges to delete this task.
 *   **404 Not Found:** Occurs if the task ID does not exist or has already been deleted.

@@ -13,7 +13,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tooltips
-    - navigation.tabs
+    #- navigation.tabs
     - navigation.sections
     - navigation.footer
     - navigation.indexes
@@ -60,13 +60,24 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  # - pymdownx.emoji:
-  #     emoji_index: python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 #extra:
   #social:
    # - icon: simple/linkedin
    #   link: https://linkedin.com/in/rkmanga
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
 copyright: Copyright &copy; 2026 RK Manga | All rights reserved.
 nav:
   - index.md
+  - api-reference.md
+  - how-to-guide.md
+  - saas-user-guide.md
+  - release-notes.md
+  - faq-troubleshooting.md
+  - contact.md

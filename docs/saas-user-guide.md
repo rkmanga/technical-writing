@@ -1,31 +1,25 @@
----
-layout: page
-title: "SaaS Application User Guide — Notion Workspace Setup"
-permalink: /writing-samples/saas-user-guide/
----
-
 <section class="section" markdown="1">
 
-<h2 class="section-title"><span class="icon-holder"><i class="fas fa-book-open"></i></span>SaaS Application User Guide</h2>
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-book-open"></i> SaaS Application User Guide</span></h2>
 
-<div class="annotation-block" style="background: #f0f7f4; border: 1px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
-  <h4 style="margin-top: 0; color: #2e6b5e; font-size: 1rem;">About This Sample</h4>
+<div class="annotation-block" style="background: #11-0602; border: 0px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
+  <h4 style="margin-top: 0; color: #02ffff; font-size: .75rem;">About This Sample</h4>
   <table style="width: 100%; font-size: 0.88rem; border-collapse: collapse;">
     <tr>
-      <td style="width: 130px; font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Product</td>
-      <td style="padding: 4px 0; color: #555;">Notion — a real, widely used SaaS productivity and collaboration platform that combines notes, databases, project management, and wikis in a single workspace.</td>
+      <td style="width: 130px; font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Product</td>
+      <td style="padding: 4px 0; color: #11-0602;">Notion — a real, widely used SaaS productivity and collaboration platform that combines notes, databases, project management, and wikis in a single workspace.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Audience</td>
-      <td style="padding: 4px 0; color: #555;">Business and operations users (non-technical) who are new to Notion and transitioning from spreadsheets or shared document folders for team tracking and record-keeping.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Audience</td>
+      <td style="padding: 4px 0; color: #11-0602;">Business and operations users (non-technical) who are new to Notion and transitioning from spreadsheets or shared document folders for team tracking and record-keeping.</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Tools Used</td>
-      <td style="padding: 4px 0; color: #555;">Framemaker (for PDF version), MkDocs (for online Help Center pages), Notion itself (for screen-by-screen validation).</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Tools Used</td>
+      <td style="padding: 4px 0; color: #11-0602;">Framemaker (for PDF version), MkDocs (for online Help Center pages), Notion itself (for screen-by-screen validation).</td>
     </tr>
     <tr>
-      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Challenge Solved</td>
-      <td style="padding: 4px 0; color: #555;">Notion is intentionally open-ended — it can be used in dozens of ways, which makes it difficult for new users to know where to start. The challenge was writing a task-oriented guide that moved users from setup to a working shared database without overwhelming them with every feature available on the interface.</td>
+      <td style="font-weight: 500; padding: 4px 10px 4px 8px; vertical-align: top; color: #11-0602;">Challenge Solved</td>
+      <td style="padding: 4px 0; color: #11-0602;">Notion is intentionally open-ended — it can be used in dozens of ways, which makes it difficult for new users to know where to start. The challenge was writing a task-oriented guide that moved users from setup to a working shared database without overwhelming them with every feature available on the interface.</td>
     </tr>
   </table>
 </div>
