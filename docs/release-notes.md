@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Release Notes Example"
+---
 <section class="section" markdown="1">
 
 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-clipboard-list"> Release Notes</i></span></h2>

@@ -1,0 +1,12 @@
+.md-nav--primary > label.md-nav__title {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+
+.md-nav--primary > .md-nav__list {
+  display: block !important;
+}

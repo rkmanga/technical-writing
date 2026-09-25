@@ -4,7 +4,7 @@ site_url: https://sitename.example
 
 theme:
   name: material
-  logo: assets/logo.png
+  logo: assets/RK_Hat.png
   #favicon: assets/favicon.ico
   #custom_dir: overrides
   features:

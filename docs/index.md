@@ -3,7 +3,7 @@ layout: page
 title: Helping Users Accomplish Tasks
 ---
 <figure markdown="span" style="text-align: center;">
-  ![](assets/Pro-FreakyBlinder.png)
+  ![](assets/RK_Hat.png)
 </figure>
 
 Technology solves problems. And we need good content on how to use that technology.
@@ -46,7 +46,7 @@ The samples below represent the range of technical documentation I produce — f
 
     [Read sample →](./saas-user-guide.md)
 
--   **[Release Notes](./release-notes.md)**
+-   **[Release Notes Example](./release-notes.md)**
 
     ---
 
@@ -54,7 +54,7 @@ The samples below represent the range of technical documentation I produce — f
 
     [Read sample →](./release-notes.md)
 
--   **[FAQ / Troubleshooting Doc](./faq-troubleshooting.md)**
+-   **[FAQ / Troubleshooting Guide](./faq-troubleshooting.md)**
 
     ---
 

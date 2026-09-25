@@ -1,6 +1,10 @@
+---
+layout: page
+title: "SaaS Application User Guide"
+---
 <section class="section" markdown="1">
 
-<h2 class="section-title"><span class="icon-holder"><i class="fas fa-book-open"></i> SaaS Application User Guide</span></h2>
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-book-open"></i> Notion User Guide</span></h2>
 
 <div class="annotation-block" style="background: #11-0602; border: 0px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
   <h4 style="margin-top: 0; color: #02ffff; font-size: .75rem;">About This Sample</h4>
