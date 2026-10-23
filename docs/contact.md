@@ -6,11 +6,6 @@ title: "Contact RK"
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
 
-    <li class="email"><i class="fas fa-envelope"></i>
-      <a href="mailto:rk.techrite@gmail.com">rk.techrite@gmail.com</a>
-    </li>
-    
-    
     <li class="phone"><i class="fas fa-phone"></i>
       <a href="tel:512 931 4726">512.931.4726</a>
     </li>
